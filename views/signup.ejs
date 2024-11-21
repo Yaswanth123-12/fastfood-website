@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="website icon" type="png"
+    href="https://t4.ftcdn.net/jpg/03/38/53/45/360_F_338534551_Rsv1pxY28g0dhFfeD7ule82Mrbi6yasF.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            display: grid;
+            place-items: center;
+            /* margin-top: 10%; */
+            background-color:#F5F5DC;
+        }
+
+        .signup {
+            width: 26%;
+            /* border: 1px solid #dadada; */
+            padding: 25px;
+            border-radius: 5%;
+            /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+            background-color: #fff;
+        }
+        a{
+            text-decoration: none;
+        }
+        p a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <img src="https://cdn.glitch.global/1fe29a7d-73cd-4242-880d-c67fb794c0fe/food.png?v=1692977430389" alt=""> -->
+    <div class="logo"><a href="/home"><img src="https://cdn.glitch.global/6c266cf1-1225-4063-90c6-bd8d5b982de2/food-removebg-preview.png?v=1693532598743" alt=""></a></div>
+    <div class="signup">
+        <small style="color: red; font-size: large;"><%= mess1 %></small>
+        <h2>Create account</h2>
+        <form class="row g-3" method="get" action="signupSubmit">
+            <div class="col-md-12">
+                <label for="inputEmail4" class="form-label">Your name</label>
+                <input type="text" class="form-control" id="inputEmail4" placeholder="First and Last name" name="name">
+            </div>
+            <div class="col-md-12">
+                <label for="inputPassword4" class="form-label">Mobile number or email</label>
+                <input type="text" class="form-control" id="inputPassword4" name="email">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Password</label>
+                <input type="password" class="form-control" id="inputAddress" placeholder="At least 6 characters" name="password">
+                <div id="emailHelp" class="form-text mx-2">Passwords must be at least 6 characters.</div>
+            </div>
+            <div class="col-12">
+                <label for="inputAddress2" class="form-label">Re-enter password</label>
+                <input type="password" class="form-control" id="inputAddress2" placeholder="" name="repass">
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary col-10 mx-4 ">Submit</button>
+            </div>
+            <div class="col-12">
+
+                <p>Already have an account?<a href="/">  Sign in</a></p>
+            </div>
+        </form>
+    </div>  
+</body>
+
+</html>
